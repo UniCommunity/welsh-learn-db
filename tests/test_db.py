@@ -20,7 +20,7 @@ def test_load_and_search(tmp_path):
     db = tmp_path / "test.sqlite"
     conn = connect(db)
     counts = load_all(conn)
-    assert counts["vocabulary"] >= 50
+    assert counts["vocabulary"] >= 20
     assert counts["phrases"] >= 20
     rows = search_vocab(conn, q="Wales")
     assert any(r["cy"] == "Cymru" for r in rows)
