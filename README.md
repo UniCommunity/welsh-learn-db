@@ -21,21 +21,33 @@ Full spoken-Welsh field guide: **[docs/GRAMMAR.md](docs/GRAMMAR.md)**
 | Inflected prepositions | [docs/GRAMMAR.md](docs/GRAMMAR.md#8-inflected-prepositions) |
 | Suggested study order | [docs/LEARNING_PATH.md](docs/LEARNING_PATH.md) · `data/lessons.json` |
 
+## NLP guide (integrated)
+
+Welsh language technology map: **[docs/NLP.md](docs/NLP.md)** · catalogue **[`data/nlp_resources.json`](data/nlp_resources.json)**
+
+| Topic | Where it lives |
+| --- | --- |
+| Why mutations break generic models | [docs/NLP.md](docs/NLP.md#why-generic-multilingual-models-stumble) · `data/mutations.json` |
+| Tools, corpora, ASR, MT, LLMs | [docs/NLP.md](docs/NLP.md#stack-by-layer) |
+| Task honesty | [docs/NLP.md](docs/NLP.md#task-honesty) |
+| Experiments on this repo | [docs/NLP.md](docs/NLP.md#experiments-that-use-this-repo) |
+
 ## What is in the box
 
 | Path | Contents |
 | --- | --- |
-| `data/vocabulary.json` | 100 starter lemmas (family, time, food, verbs, colours, culture) |
-| `data/phrases.json` | 40 high-frequency phrases with register and region tags |
+| `data/vocabulary.json` | Starter lemmas (family, time, food, verbs, colours, culture) |
+| `data/phrases.json` | High-frequency phrases with register and region tags |
 | `data/mutations.json` | Soft / nasal / aspirate maps, triggers, examples |
 | `data/alphabet.json` | Yr wyddor, including digraph letters |
 | `data/numbers.json` | Decimal 0–100 samples + vigesimal notes |
 | `data/grammar.json` | Entry-level notes (bod, VSO, article, gender, yes/no) |
 | `data/lessons.json` | 8-lesson path from sounds to mutation recognition |
+| `data/nlp_resources.json` | Hubs, tools, datasets, models, experiment hooks |
 | `schema/schema.sql` | SQLite tables |
 | `src/welsh_db.py` | Load + search + `mutate()` |
 | `src/cli.py` | Command-line interface |
-| `docs/` | Pronunciation, grammar map, schema, resources |
+| `docs/` | Pronunciation, grammar, NLP, schema, resources |
 
 ## Quick start
 
@@ -82,7 +94,7 @@ Soft mutation of *Cymru* is *Gymru* (`Croeso i Gymru`). The helper in `src/welsh
 
 On GitHub: **Settings → General → Template repository** so others can use **Use this template**.
 
-Suggested topics: `welsh`, `cymraeg`, `language-learning`, `dataset`, `sqlite`.
+Suggested topics: `welsh`, `cymraeg`, `language-learning`, `dataset`, `sqlite`, `nlp`.
 
 ## Roadmap
 
@@ -91,6 +103,8 @@ Suggested topics: `welsh`, `cymraeg`, `language-learning`, `dataset`, `sqlite`.
 - [ ] Audio filename or URL column
 - [ ] Intermediate vocabulary pack
 - [ ] Optional FastAPI read-only server
+- [ ] Inverse-mutation lemma search in the CLI
+- [ ] Hook Cysill / llm-evals-cy against generated Welsh
 
 ## Licence
 
