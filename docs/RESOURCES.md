@@ -14,6 +14,10 @@ Official and widely used starting points (not affiliated with this repo):
 - A structured course book from your Dysgu Cymraeg level
 - Gareth King, *Basic Welsh* / *Modern Welsh*
 
+## Language technology
+
+See **[NLP.md](NLP.md)** and [`data/nlp_resources.json`](../data/nlp_resources.json) for CyTag, Cysill, CorCenCC, Trawsgrifiwr, Macsen, Iriaith models, and eval suites.
+
 ## How this repo relates
 
 This project is a **structured dataset + tiny toolkit**, not a replacement for a tutor or a full course. Use it to power flashcards, SRS decks, bots, or your own notes.
